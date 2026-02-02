@@ -1,0 +1,214 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+header {
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    flex-direction: row;
+    align-items: center;
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px;
+    width: 70%;
+}
+
+#description {
+    width: 50%;
+    text-align: center;
+}
+
+#profil-img {
+    width: 70%;
+    clip-path: circle(49%);
+    /*cercle propre*/
+}
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 74%;
+    gap: 20px;
+
+}
+
+#left-part,
+#right-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px;
+    border: 1px solid white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: flex-start;
+}
+
+li,
+.lien-icon {
+    display: flex;
+    gap: 10 px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.lien-icon:active,
+.lien-icon:visited,
+.lien-icon:link {
+    color: white;
+
+}
+
+
+#left-part {
+    flex-grow: 1;
+    align-items: center;
+}
+
+#right-part {
+    flex-grow: 4;
+}
+
+.separateur {
+    width: 70%;
+    height: 2px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px;
+}
+
+#formations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.formation {
+    display: flex;
+    justify-content: space-around;
+
+    width: 70%;
+}
+
+.formation-right {
+    justify-content: flex-end;
+
+}
+
+#img-presentation {
+    display: flex;
+
+}
+
+.separateur-formation {
+    width: 50%;
+    height: 1px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px;
+}
+
+#experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-top {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.experience-bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.experience-bottom ul,
+.experience-bottom div {
+    flex-grow: 1;
+}
+
+.experience-bottom::before li {
+    content: "#";
+}
+
+@media (max-width : 768px) {
+
+    main,
+    header {
+        flex-direction: column;
+    }
+
+    #profil-img {
+        width: 500%
+    }
+
+    .formation {
+        flex-direction: column;
+        gap: unse0pxt;
+    }
+
+    .formation-right,
+    experience-right {
+        margin-top: -20px;
+    }
+
+    .formation-right li {
+        justify-content: flex-start;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .experience-top {
+        flex-direction: column;
+    }
+
+    header {
+        width: 80%;
+    }
+
+    main {
+        width: 84%;
+    }
+}
